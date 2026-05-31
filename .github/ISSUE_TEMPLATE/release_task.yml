@@ -1,0 +1,58 @@
+name: Release Task
+description: Coordinate a release across one or more liveeasy apps.
+title: "[Release]: "
+labels: ["enhancement"]
+projects: ["liveeasy-org/1"]
+body:
+  - type: input
+    id: release-name
+    attributes:
+      label: Release Name / Version
+      placeholder: "example: iOS 1.2.0, HarmonyOS beta 1"
+    validations:
+      required: true
+  - type: textarea
+    id: apps
+    attributes:
+      label: Changed Apps / Repositories
+      placeholder: |
+        - 
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Release Scope
+      description: What changes are included?
+    validations:
+      required: true
+  - type: textarea
+    id: test-evidence
+    attributes:
+      label: Test Evidence
+      description: Commands, devices, screenshots, review links, or build numbers.
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Known Risks
+      placeholder: |
+        - Risk:
+          Mitigation:
+    validations:
+      required: true
+  - type: textarea
+    id: rollback
+    attributes:
+      label: Rollback Path
+      description: How do we recover if this release fails?
+    validations:
+      required: true
+  - type: input
+    id: approver
+    attributes:
+      label: Final Approver
+      placeholder: "@username"
+    validations:
+      required: true

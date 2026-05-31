@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: liveeasy Project
+    url: https://github.com/orgs/liveeasy-org/projects/1
+    about: Check ownership, status, and possible conflicts before starting work.
+  - name: Collaboration operating model
+    url: https://github.com/liveeasy-org/.github/blob/main/docs/collaboration-operating-model.md
+    about: Read the shared webcoding rules for collaborators and AI agents.

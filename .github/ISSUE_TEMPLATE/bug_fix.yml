@@ -1,0 +1,84 @@
+name: Bug Fix
+description: Report and coordinate a bug fix without colliding with partner work.
+title: "[Bug]: "
+labels: ["bug"]
+projects: ["liveeasy-org/1"]
+body:
+  - type: input
+    id: app-repo
+    attributes:
+      label: App / Repository
+      placeholder: "example: liveeasy-ios, liveeasy-harmony, liveeasy-web"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current Behavior
+      description: What is happening now?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Screenshots, logs, recordings, device info, or links.
+    validations:
+      required: false
+  - type: textarea
+    id: touched-files
+    attributes:
+      label: Likely Touched Files / Modules
+      description: List expected files, screens, modules, APIs, or config areas.
+    validations:
+      required: true
+  - type: dropdown
+    id: conflict-risk
+    attributes:
+      label: Conflict Risk
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
+  - type: checkboxes
+    id: overlap-check
+    attributes:
+      label: Partner / Agent Overlap Check
+      options:
+        - label: I checked the liveeasy Project board.
+          required: true
+        - label: I checked related open Issues.
+          required: true
+        - label: I checked related open PRs.
+          required: true
+        - label: I commented on overlapping work, or confirmed no overlap.
+          required: true
+  - type: textarea
+    id: test-plan
+    attributes:
+      label: Fix Verification
+      placeholder: |
+        - Command:
+        - Manual flow:
+        - Device/browser:
+    validations:
+      required: true

@@ -1,0 +1,50 @@
+name: Decision Record
+description: Record a product, architecture, workflow, or release decision.
+title: "[Decision]: "
+labels: ["documentation"]
+projects: ["liveeasy-org/1"]
+body:
+  - type: input
+    id: area
+    attributes:
+      label: Area
+      placeholder: "product, architecture, API, release, collaboration, design"
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision
+      description: What did we decide?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why is this decision needed now?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      placeholder: |
+        - Option A:
+        - Option B:
+    validations:
+      required: false
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact / Follow-up
+      description: What work, risks, or communication does this create?
+    validations:
+      required: true
+  - type: checkboxes
+    id: visibility
+    attributes:
+      label: Visibility Check
+      options:
+        - label: This decision should be visible to both collaborators and future AI agents.
+          required: true

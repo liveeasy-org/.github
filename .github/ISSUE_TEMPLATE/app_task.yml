@@ -1,0 +1,114 @@
+name: App Task / Feature
+description: Register planned product, UI, backend, or app work before coding.
+title: "[Task]: "
+labels: ["enhancement"]
+projects: ["liveeasy-org/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Start here before any implementation. This Issue is the shared source of truth for the task.
+  - type: input
+    id: app-repo
+    attributes:
+      label: App / Repository
+      description: Which app or repository does this task affect?
+      placeholder: "example: liveeasy-ios, liveeasy-harmony, liveeasy-web"
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      description: Who is taking responsibility for this task?
+      placeholder: "@username"
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What user or business outcome should this change create?
+      placeholder: "Describe the outcome, not just the code change."
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included, and what is explicitly not included?
+      placeholder: |
+        Included:
+        - 
+
+        Not included:
+        - 
+    validations:
+      required: true
+  - type: textarea
+    id: touched-files
+    attributes:
+      label: Likely Touched Files / Modules
+      description: List expected files, screens, modules, APIs, or config areas.
+      placeholder: |
+        - src/features/login/*
+        - app/routes/auth.ts
+        - build config
+    validations:
+      required: true
+  - type: dropdown
+    id: conflict-risk
+    attributes:
+      label: Conflict Risk
+      description: How likely is this task to overlap with partner work?
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
+  - type: checkboxes
+    id: overlap-check
+    attributes:
+      label: Partner / Agent Overlap Check
+      description: Complete before coding.
+      options:
+        - label: I checked the liveeasy Project board.
+          required: true
+        - label: I checked related open Issues.
+          required: true
+        - label: I checked related open PRs.
+          required: true
+        - label: I checked latest remote branch state or asked an agent to do it.
+          required: true
+        - label: I commented on overlapping work, or confirmed no overlap.
+          required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: What must be true before this task is done?
+      placeholder: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: test-plan
+    attributes:
+      label: Test Plan
+      description: How should the change be verified?
+      placeholder: |
+        - Command:
+        - Manual flow:
+        - Device/browser:
+    validations:
+      required: true
+  - type: textarea
+    id: decisions
+    attributes:
+      label: Important Decisions / Notes
+      description: Capture durable decisions here instead of leaving them only in chat.
+      placeholder: "Decision, context, alternatives, and tradeoff."
+    validations:
+      required: false
