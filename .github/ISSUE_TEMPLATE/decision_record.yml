@@ -2,7 +2,6 @@ name: Decision Record
 description: Record a product, architecture, workflow, or release decision.
 title: "[Decision]: "
 labels: ["documentation"]
-projects: ["liveeasy-org/1"]
 body:
   - type: input
     id: area

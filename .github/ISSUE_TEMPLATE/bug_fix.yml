@@ -2,7 +2,6 @@ name: Bug Fix
 description: Report and coordinate a bug fix without colliding with partner work.
 title: "[Bug]: "
 labels: ["bug"]
-projects: ["liveeasy-org/1"]
 body:
   - type: input
     id: app-repo
@@ -64,7 +63,9 @@ body:
     attributes:
       label: Partner / Agent Overlap Check
       options:
-        - label: I checked the liveeasy Project board.
+        - label: I checked this repository's Project board or active task list.
+          required: true
+        - label: I checked the linked portfolio item if this bug belongs to a larger product project.
           required: true
         - label: I checked related open Issues.
           required: true

@@ -13,17 +13,22 @@ repository does not define its own template:
 The operating model is simple:
 
 1. Every code change starts from a GitHub Issue.
-2. Before coding, the owner or AI agent checks the Project board, open Issues,
-   open PRs, and the latest remote branch state.
+2. Before coding, the owner or AI agent checks the repository Project or active
+   task list, linked portfolio item, open Issues, open PRs, and latest remote
+   branch state.
 3. One Issue maps to one short-lived branch and one PR.
 4. Important decisions are captured as Issues so both collaborators and agents
    can read the same source of truth.
 5. Release work must include test evidence, known risks, rollback path, and
    final approver.
 
-Main Project:
+Portfolio Project:
 
 - https://github.com/orgs/liveeasy-org/projects/1
+
+The Portfolio Project tracks product-level initiatives and major decisions. App
+repositories should track their detailed implementation work locally and link
+back to the relevant portfolio item.
 
 Official GitHub references used for this setup:
 

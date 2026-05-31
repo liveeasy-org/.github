@@ -13,7 +13,8 @@ Before code edits in a repository connected to GitHub:
    `git pull --ff-only` when safe.
 4. If local uncommitted changes exist, do not overwrite, reset, stash, merge, or
    rebase silently.
-5. Check liveeasy Project, open Issues, and open PRs for overlapping work.
+5. Check this repository's Project or active task list, the linked liveeasy
+   Portfolio item, open Issues, and open PRs for overlapping work.
 
 ## Conflict Review
 
@@ -36,6 +37,12 @@ Issue or PR.
 - One PR per branch.
 - Draft PR early.
 - Keep PRs small enough to review.
+
+## Portfolio Boundary
+
+The organization-level liveeasy Project tracks product-level initiatives and
+major decisions. Detailed implementation tasks should live in the relevant app
+repository and link back to the portfolio item when applicable.
 
 ## Forbidden Without Explicit User Direction
 

@@ -2,7 +2,6 @@ name: Release Task
 description: Coordinate a release across one or more liveeasy apps.
 title: "[Release]: "
 labels: ["enhancement"]
-projects: ["liveeasy-org/1"]
 body:
   - type: input
     id: release-name

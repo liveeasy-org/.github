@@ -8,7 +8,8 @@ Closes #
 
 ## Conflict Check
 
-- [ ] I checked the liveeasy Project board.
+- [ ] I checked this repository's Project board or active task list.
+- [ ] I checked the linked liveeasy Portfolio item if this PR belongs to a larger product project.
 - [ ] I checked related open Issues.
 - [ ] I checked related open PRs.
 - [ ] I fetched remote refs before editing.

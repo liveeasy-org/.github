@@ -23,7 +23,9 @@ The Issue must include:
 
 Before editing code, check:
 
-- The liveeasy GitHub Project board
+- This repository's Project board or active task list
+- The linked liveeasy Portfolio item when this task belongs to a larger product
+  project
 - Open Issues
 - Open PRs
 - The latest remote branch state
@@ -50,7 +52,7 @@ Open a Draft PR early when work starts. Link the Issue in the PR body and use
 
 ## 4. Status Rule
 
-Use Project status consistently:
+Use repository-level Project status consistently:
 
 - Todo: agreed task, not started
 - In Progress: owner is actively editing
@@ -59,6 +61,9 @@ Use Project status consistently:
 
 Blocked work must include the blocker, owner, and next action in an Issue
 comment.
+
+The organization-level liveeasy Project is the portfolio board. It tracks
+product projects and major decisions, not every implementation task.
 
 ## 5. Agent Rule
 

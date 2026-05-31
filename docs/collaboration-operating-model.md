@@ -4,23 +4,34 @@ This document turns the collaboration method into a reusable team protocol.
 
 ## Source of Truth
 
-Use GitHub Issues and the liveeasy Project as the shared planning surface.
+Use two levels of GitHub tracking.
 
-- Issues record intent, ownership, decisions, risk, and acceptance criteria.
-- Pull requests record implementation and review.
-- The Project board shows live status and reduces duplicate work.
+The organization-level liveeasy Project is the portfolio board. It tracks
+product-level initiatives and major decisions.
+
+Each app repository tracks detailed implementation work in its own Issues,
+Pull Requests, and optional repository-level Project.
+
+- Portfolio Issues record product intent, ownership, decisions, risk, and links
+  to detailed tracking.
+- App Issues record implementation scope and acceptance criteria.
+- Pull Requests record implementation and review.
 
 ## Normal Flow
 
-1. Create an Issue with the correct template.
-2. Check Project, Issues, PRs, and remote branches for overlap.
-3. Claim the Issue by commenting and moving it to In Progress.
-4. Create a branch that includes the Issue number.
-5. Open a Draft PR early.
-6. Keep important decisions in the Issue or PR thread.
-7. Request review.
-8. Merge only after acceptance criteria and tests are satisfied.
-9. Move the Issue to Done after verification.
+1. Create or update a portfolio Issue for the product-level initiative.
+2. Create detailed app Issues in the relevant repository.
+3. Link app Issues and PRs back to the portfolio Issue.
+4. Check repository work, portfolio item, Issues, PRs, and remote branches for
+   overlap.
+5. Claim the detailed Issue by commenting and moving it to In Progress.
+6. Create a branch that includes the Issue number.
+7. Open a Draft PR early.
+8. Keep important implementation decisions in the Issue or PR thread.
+9. Keep product-level decisions in the portfolio Issue.
+10. Request review.
+11. Merge only after acceptance criteria and tests are satisfied.
+12. Move the detailed Issue to Done after verification.
 
 ## Agent Review Requirement
 

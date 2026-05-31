@@ -2,7 +2,6 @@ name: App Task / Feature
 description: Register planned product, UI, backend, or app work before coding.
 title: "[Task]: "
 labels: ["enhancement"]
-projects: ["liveeasy-org/1"]
 body:
   - type: markdown
     attributes:
@@ -73,7 +72,9 @@ body:
       label: Partner / Agent Overlap Check
       description: Complete before coding.
       options:
-        - label: I checked the liveeasy Project board.
+        - label: I checked this repository's Project board or active task list.
+          required: true
+        - label: I checked the linked portfolio item if this task belongs to a larger product project.
           required: true
         - label: I checked related open Issues.
           required: true
