@@ -12,7 +12,8 @@ repository does not define its own template:
 
 The operating model is simple:
 
-1. Every code change starts from a GitHub Issue.
+1. Every requirement, bug, decision, and release task is created in Chinese in
+   the Project board or linked GitHub Issue.
 2. Before coding, the owner or AI agent checks the repository Project or active
    task list, linked portfolio item, open Issues, open PRs, and latest remote
    branch state.
@@ -21,6 +22,9 @@ The operating model is simple:
    can read the same source of truth.
 5. Release work must include test evidence, known risks, rollback path, and
    final approver.
+6. Every app repository keeps `CHANGELOG.md`; each change adds one Chinese
+   one-line record with type and summary.
+7. Commit messages, PR titles, and PR bodies are written in Chinese.
 
 Portfolio Project:
 

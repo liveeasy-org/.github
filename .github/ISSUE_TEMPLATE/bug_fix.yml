@@ -1,33 +1,33 @@
-name: Bug Fix
-description: Report and coordinate a bug fix without colliding with partner work.
-title: "[Bug]: "
+name: 缺陷修复
+description: 登记并协调缺陷修复，避免和协作者工作冲突。
+title: "[缺陷]: "
 labels: ["bug"]
 body:
   - type: input
     id: app-repo
     attributes:
-      label: App / Repository
-      placeholder: "example: liveeasy-ios, liveeasy-harmony, liveeasy-web"
+      label: 应用 / 仓库
+      placeholder: "例如：xiaohonghua、liveeasy-ios、liveeasy-web"
     validations:
       required: true
   - type: textarea
     id: current
     attributes:
-      label: Current Behavior
-      description: What is happening now?
+      label: 当前表现
+      description: 现在发生了什么？
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Expected Behavior
-      description: What should happen instead?
+      label: 期望表现
+      description: 正确情况下应该发生什么？
     validations:
       required: true
   - type: textarea
     id: reproduce
     attributes:
-      label: Steps to Reproduce
+      label: 复现步骤
       placeholder: |
         1. 
         2. 
@@ -37,49 +37,49 @@ body:
   - type: textarea
     id: evidence
     attributes:
-      label: Evidence
-      description: Screenshots, logs, recordings, device info, or links.
+      label: 证据
+      description: 截图、日志、录屏、设备信息或链接。
     validations:
       required: false
   - type: textarea
     id: touched-files
     attributes:
-      label: Likely Touched Files / Modules
-      description: List expected files, screens, modules, APIs, or config areas.
+      label: 可能涉及的文件 / 模块
+      description: 列出预计会改动的文件、页面、模块、API 或配置区域。
     validations:
       required: true
   - type: dropdown
     id: conflict-risk
     attributes:
-      label: Conflict Risk
+      label: 冲突风险
       options:
-        - Low
-        - Medium
-        - High
+        - 低
+        - 中
+        - 高
     validations:
       required: true
   - type: checkboxes
     id: overlap-check
     attributes:
-      label: Partner / Agent Overlap Check
+      label: 协作者 / AI Agent 冲突检查
       options:
-        - label: I checked this repository's Project board or active task list.
+        - label: 我已检查本仓库项目看板或活跃任务列表。
           required: true
-        - label: I checked the linked portfolio item if this bug belongs to a larger product project.
+        - label: 如果缺陷属于更大的产品项目，我已检查关联的 Portfolio 条目。
           required: true
-        - label: I checked related open Issues.
+        - label: 我已检查相关 open Issues。
           required: true
-        - label: I checked related open PRs.
+        - label: 我已检查相关 open PRs。
           required: true
-        - label: I commented on overlapping work, or confirmed no overlap.
+        - label: 我已在重叠工作处留言协调，或确认没有重叠。
           required: true
   - type: textarea
     id: test-plan
     attributes:
-      label: Fix Verification
+      label: 修复验证方式
       placeholder: |
-        - Command:
-        - Manual flow:
-        - Device/browser:
+        - 命令：
+        - 手动流程：
+        - 设备 / 浏览器：
     validations:
       required: true

@@ -1,42 +1,62 @@
-## Linked Issue
+## 关联看板条目或 Issue
 
 Closes #
 
-## What Changed
+## 修改类型
+
+- [ ] 功能
+- [ ] 缺陷
+- [ ] 文档
+- [ ] 配置
+- [ ] 重构
+- [ ] 测试
+- [ ] 发布
+
+## 改动内容
 
 -
 
-## Conflict Check
+## 变更记录
 
-- [ ] I checked this repository's Project board or active task list.
-- [ ] I checked the linked liveeasy Portfolio item if this PR belongs to a larger product project.
-- [ ] I checked related open Issues.
-- [ ] I checked related open PRs.
-- [ ] I fetched remote refs before editing.
-- [ ] I confirmed whether this PR touches files another collaborator is editing.
+- [ ] 已更新根目录 `CHANGELOG.md`
 
-Potentially touched files/modules:
+新增记录：
 
--
+```text
+YYYY-MM-DD | 类型 | 一句话说明
+```
 
-## Test Evidence
+## 冲突检查
 
--
+- [ ] 我已检查本仓库项目看板或活跃任务列表。
+- [ ] 如果本 PR 属于更大的产品项目，我已检查关联的 liveeasy Portfolio 条目。
+- [ ] 我已检查相关 open Issues。
+- [ ] 我已检查相关 open PRs。
+- [ ] 我已在修改前执行 `git fetch` 刷新远端引用。
+- [ ] 我已确认本 PR 是否涉及其他协作者正在修改的文件。
 
-## Review Focus
-
--
-
-## Release / Rollback Notes
+可能涉及的文件或模块：
 
 -
 
-## Risk
+## 验证方式
 
-- [ ] Low
-- [ ] Medium
-- [ ] High
+-
 
-If risk is medium or high, explain why:
+## 评审重点
+
+-
+
+## 发布或回滚说明
+
+-
+
+## 风险
+
+- [ ] 低
+- [ ] 中
+- [ ] 高
+
+如果风险为中或高，说明原因：
 
 -

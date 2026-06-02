@@ -3,6 +3,21 @@
 These rules are designed for AI coding agents working in liveeasy repositories.
 Copy this file into each app repository root when that repository is created.
 
+## Required Chinese Collaboration Rules
+
+- All requirements, bugs, decisions, and release tasks must be created in Chinese
+  in the GitHub Project board or linked Issue, then kept in sync with the code
+  work.
+- Every repository must keep a root `CHANGELOG.md`. Each change must add one
+  Chinese line in this format: `YYYY-MM-DD | 类型 | 一句话说明`.
+- Use these change types first: `功能`, `缺陷`, `文档`, `配置`, `重构`, `测试`,
+  `发布`.
+- Commit messages, PR titles, and PR bodies must be written in Chinese.
+- PR bodies must clearly state the change type, what changed, verification, and
+  the linked Chinese Project item or Issue.
+- Repository-specific rules may add more constraints, but must not weaken these
+  Chinese collaboration requirements.
+
 ## Required Startup Check
 
 Before code edits in a repository connected to GitHub:
@@ -37,6 +52,7 @@ Issue or PR.
 - One PR per branch.
 - Draft PR early.
 - Keep PRs small enough to review.
+- Update `CHANGELOG.md` before committing any code or configuration change.
 
 ## Portfolio Boundary
 

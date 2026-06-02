@@ -1,19 +1,19 @@
-name: Release Task
-description: Coordinate a release across one or more liveeasy apps.
-title: "[Release]: "
+name: 发布任务
+description: 协调一个或多个 liveeasy 应用的发布。
+title: "[发布]: "
 labels: ["enhancement"]
 body:
   - type: input
     id: release-name
     attributes:
-      label: Release Name / Version
-      placeholder: "example: iOS 1.2.0, HarmonyOS beta 1"
+      label: 发布名称 / 版本
+      placeholder: "例如：iOS 1.2.0、HarmonyOS beta 1"
     validations:
       required: true
   - type: textarea
     id: apps
     attributes:
-      label: Changed Apps / Repositories
+      label: 变更应用 / 仓库
       placeholder: |
         - 
     validations:
@@ -21,37 +21,37 @@ body:
   - type: textarea
     id: scope
     attributes:
-      label: Release Scope
-      description: What changes are included?
+      label: 发布范围
+      description: 这次发布包含哪些修改？
     validations:
       required: true
   - type: textarea
     id: test-evidence
     attributes:
-      label: Test Evidence
-      description: Commands, devices, screenshots, review links, or build numbers.
+      label: 验证证据
+      description: 命令、设备、截图、评审链接或构建号。
     validations:
       required: true
   - type: textarea
     id: risk
     attributes:
-      label: Known Risks
+      label: 已知风险
       placeholder: |
-        - Risk:
-          Mitigation:
+        - 风险：
+          缓解方案：
     validations:
       required: true
   - type: textarea
     id: rollback
     attributes:
-      label: Rollback Path
-      description: How do we recover if this release fails?
+      label: 回滚方案
+      description: 如果发布失败，如何恢复？
     validations:
       required: true
   - type: input
     id: approver
     attributes:
-      label: Final Approver
+      label: 最终确认人
       placeholder: "@username"
     validations:
       required: true

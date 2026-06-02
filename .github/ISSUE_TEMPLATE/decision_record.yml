@@ -1,49 +1,49 @@
-name: Decision Record
-description: Record a product, architecture, workflow, or release decision.
-title: "[Decision]: "
+name: 决策记录
+description: 记录产品、架构、流程或发布决策。
+title: "[决策]: "
 labels: ["documentation"]
 body:
   - type: input
     id: area
     attributes:
-      label: Area
-      placeholder: "product, architecture, API, release, collaboration, design"
+      label: 领域
+      placeholder: "产品、架构、API、发布、协作、设计"
     validations:
       required: true
   - type: textarea
     id: decision
     attributes:
-      label: Decision
-      description: What did we decide?
+      label: 决策
+      description: 我们决定了什么？
     validations:
       required: true
   - type: textarea
     id: context
     attributes:
-      label: Context
-      description: Why is this decision needed now?
+      label: 背景
+      description: 为什么现在需要这个决策？
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternatives Considered
+      label: 考虑过的备选方案
       placeholder: |
-        - Option A:
-        - Option B:
+        - 方案 A：
+        - 方案 B：
     validations:
       required: false
   - type: textarea
     id: impact
     attributes:
-      label: Impact / Follow-up
-      description: What work, risks, or communication does this create?
+      label: 影响 / 后续动作
+      description: 这个决策会带来什么工作、风险或沟通事项？
     validations:
       required: true
   - type: checkboxes
     id: visibility
     attributes:
-      label: Visibility Check
+      label: 可见性检查
       options:
-        - label: This decision should be visible to both collaborators and future AI agents.
+        - label: 这个决策应该对协作者和后续 AI Agent 可见。
           required: true

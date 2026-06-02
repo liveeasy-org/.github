@@ -1,94 +1,94 @@
-name: App Task / Feature
-description: Register planned product, UI, backend, or app work before coding.
-title: "[Task]: "
+name: 应用任务 / 功能
+description: 在编码前登记产品、UI、后端或应用开发任务。
+title: "[任务]: "
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Start here before any implementation. This Issue is the shared source of truth for the task.
+        开始实现前先创建这个 Issue。这里是任务的中文共同事实来源，需要和项目看板保持同步。
   - type: input
     id: app-repo
     attributes:
-      label: App / Repository
-      description: Which app or repository does this task affect?
-      placeholder: "example: liveeasy-ios, liveeasy-harmony, liveeasy-web"
+      label: 应用 / 仓库
+      description: 这个任务影响哪个应用或仓库？
+      placeholder: "例如：xiaohonghua、liveeasy-ios、liveeasy-web"
     validations:
       required: true
   - type: input
     id: owner
     attributes:
-      label: Owner
-      description: Who is taking responsibility for this task?
+      label: 负责人
+      description: 谁负责推进这个任务？
       placeholder: "@username"
     validations:
       required: true
   - type: textarea
     id: goal
     attributes:
-      label: Goal
-      description: What user or business outcome should this change create?
-      placeholder: "Describe the outcome, not just the code change."
+      label: 目标
+      description: 这个修改要带来什么用户结果或业务结果？
+      placeholder: "描述结果，不只描述代码改动。"
     validations:
       required: true
   - type: textarea
     id: scope
     attributes:
-      label: Scope
-      description: What is included, and what is explicitly not included?
+      label: 范围
+      description: 包含什么，明确不包含什么？
       placeholder: |
-        Included:
+        包含：
         - 
 
-        Not included:
+        不包含：
         - 
     validations:
       required: true
   - type: textarea
     id: touched-files
     attributes:
-      label: Likely Touched Files / Modules
-      description: List expected files, screens, modules, APIs, or config areas.
+      label: 可能涉及的文件 / 模块
+      description: 列出预计会改动的文件、页面、模块、API 或配置区域。
       placeholder: |
         - src/features/login/*
         - app/routes/auth.ts
-        - build config
+        - 构建配置
     validations:
       required: true
   - type: dropdown
     id: conflict-risk
     attributes:
-      label: Conflict Risk
-      description: How likely is this task to overlap with partner work?
+      label: 冲突风险
+      description: 这个任务和其他协作者工作重叠的概率有多高？
       options:
-        - Low
-        - Medium
-        - High
+        - 低
+        - 中
+        - 高
     validations:
       required: true
   - type: checkboxes
     id: overlap-check
     attributes:
-      label: Partner / Agent Overlap Check
-      description: Complete before coding.
+      label: 协作者 / AI Agent 冲突检查
+      description: 编码前必须完成。
       options:
-        - label: I checked this repository's Project board or active task list.
+        - label: 我已检查本仓库项目看板或活跃任务列表。
           required: true
-        - label: I checked the linked portfolio item if this task belongs to a larger product project.
+        - label: 如果任务属于更大的产品项目，我已检查关联的 Portfolio 条目。
           required: true
-        - label: I checked related open Issues.
+        - label: 我已检查相关 open Issues。
           required: true
-        - label: I checked related open PRs.
+        - label: 我已检查相关 open PRs。
           required: true
-        - label: I checked latest remote branch state or asked an agent to do it.
+        - label: 我已检查最新远端分支状态，或已让 Agent 检查。
           required: true
-        - label: I commented on overlapping work, or confirmed no overlap.
+        - label: 我已在重叠工作处留言协调，或确认没有重叠。
           required: true
   - type: textarea
     id: acceptance
     attributes:
-      label: Acceptance Criteria
-      description: What must be true before this task is done?
+      label: 验收标准
+      description: 满足什么条件才算完成？
       placeholder: |
         - [ ] 
         - [ ] 
@@ -97,19 +97,19 @@ body:
   - type: textarea
     id: test-plan
     attributes:
-      label: Test Plan
-      description: How should the change be verified?
+      label: 验证方式
+      description: 这个修改应该如何验证？
       placeholder: |
-        - Command:
-        - Manual flow:
-        - Device/browser:
+        - 命令：
+        - 手动流程：
+        - 设备 / 浏览器：
     validations:
       required: true
   - type: textarea
     id: decisions
     attributes:
-      label: Important Decisions / Notes
-      description: Capture durable decisions here instead of leaving them only in chat.
-      placeholder: "Decision, context, alternatives, and tradeoff."
+      label: 重要决策 / 备注
+      description: 把长期有效的决策写在这里，不要只留在聊天里。
+      placeholder: "决策、背景、备选方案和取舍。"
     validations:
       required: false
